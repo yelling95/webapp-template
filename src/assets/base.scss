@@ -1,0 +1,172 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css');
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1280px;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
+  font-style: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--grey-30);
+    border-radius: 4px;
+  }
+}
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --white: #ffffff;
+
+  // grey scale
+  --grey-100: rgba(23, 23, 23, 1);
+  --grey-90: rgba(46, 46, 46, 1);
+  --grey-80: rgba(69, 69, 69, 1);
+  --grey-70: rgba(93, 93, 93, 1);
+  --grey-60: rgba(116, 116, 116, 1);
+  --grey-50: rgba(139, 139, 139, 1);
+  --grey-40: rgba(162, 162, 162, 1);
+  --grey-30: rgba(185, 185, 185, 1);
+  --grey-20: rgba(209, 209, 209, 1);
+  --grey-10: rgba(232, 232, 232, 1);
+  --grey-08: rgba(236, 236, 236, 1);
+  --grey-04: rgba(246, 246, 246, 1);
+
+  --shadow-01: 0px 4px 32px rgba(0, 0, 0, 0.1);
+  --shadow-02: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-color: 0px 7px 32px rgba(38, 120, 167, 0.1);
+  // background-color
+  --background-light-blue: rgba(240, 248, 255, 1);
+  --dimm-layer: rgba(0, 0, 0, 0.3);
+
+  // primary color
+  --primary-100: rgba(40, 165, 236, 1);
+  --primary-25: rgba(201, 233, 250, 1);
+  --primary-16: rgba(221, 241, 252, 1);
+  --primary-08: rgba(238, 248, 253, 1);
+  --primary-06: rgba(242, 250, 254, 1);
+  --primary-button-pressed: rgba(37, 137, 193, 1);
+
+  // secondary color
+  --secondary-100: rgba(26, 106, 153, 1);
+  --secondary-70: rgba(95, 151, 184, 1);
+  --secondary-button-pressed: rgba(25, 89, 127, 1);
+
+  // sub color
+  --light-grey: rgba(250, 250, 250, 1);
+  --blue-grey: rgba(240, 245, 249, 1);
+
+  --red: rgba(241, 74, 114, 1);
+  --pale-red: rgba(255, 239, 239, 1);
+
+  --green: rgba(36, 224, 144, 1);
+  --pale-green: rgba(214, 249, 234, 1);
+
+  --yellow: rgba(255, 201, 66, 1);
+  --pale-yellow: rgba(255, 247, 220, 1);
+
+  --chart-orange: rgba(255, 154, 62, 1);
+  --chart-mint: rgba(41, 209, 232, 1);
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+.flex_inline {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+}
+.flex_column {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.flex_grow {
+  flex-grow: 1;
+  flex: 1;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.flex_vertical_center {
+  align-items: center;
+}
+.flex_vertical_end {
+  align-items: flex-end;
+}
+.flex_horizontal_center {
+  justify-content: center;
+}
+.flex_space_between {
+  justify-content: space-between;
+}
+.flex_grow {
+  flex-grow: 1;
+  flex: 1;
+}
+// flex grow 에서 elipse 처리하기위해
+.width_0 {
+  width: 0;
+}
+
+.gap_4 {
+  gap: 4px;
+}
+.gap_8 {
+  gap: 8px;
+}
+.gap_10 {
+  gap: 10px;
+}
+.gap_11 {
+  gap: 11px;
+}
+.gap_12 {
+  gap: 12px;
+}
+.gap_16 {
+  gap: 16px;
+}
+.gap_20 {
+  gap: 20px;
+}
+.gap_24 {
+  gap: 24px;
+}
+.gap_30 {
+  gap: 30px;
+}
+.gap_32 {
+  gap: 32px;
+}

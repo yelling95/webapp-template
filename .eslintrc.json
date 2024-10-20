@@ -1,0 +1,32 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": ["standard", "plugin:react/recommended"],
+  "settings": {
+    "propWrapperFunctions": [
+      // The names of any function used to wrap propTypes, e.g. `forbidExtraProps`. If this isn't set, any propTypes wrapped in a function will be skipped.
+      "forbidExtraProps",
+      {"property": "freeze", "object": "Object"},
+      {"property": "myFavoriteWrapper"}
+    ],
+    "linkComponents": [
+      // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
+      "Hyperlink",
+      {"name": "Link", "linkAttribute": "to"}
+    ]
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "quotes": ["error", "single", {"avoidEscape": true}],
+    "no-empty-function": "off",
+    "react/display-name": "off",
+    "no-undef": "error",
+    "no-unused-vars": "error", // 사용하지않는 변수 error처리 하겠다.
+    "no-console": "off", // 콘솔로그를 사용하수 있게 꺼놓겠다.
+    "object-curly-spacing": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off",
+    "multiline-ternary": "off"
+  }
+}

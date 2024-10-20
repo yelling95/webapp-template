@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="/manifest" href="/manifest.json" />
+    <title>:: WEBAPP ::</title>
+
+    <!-- Naver Map  -->
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=<%=NAVER_API_KEY_ID%>"
+    ></script>
+    <script type="text/javascript" src="<%=PUBLIC_PATH%>MarkerClustering.js"></script>
+  </head>
+  <body style="margin: 0">
+    <noscript></noscript>
+    <div id="root"></div>
+  </body>
+</html>
